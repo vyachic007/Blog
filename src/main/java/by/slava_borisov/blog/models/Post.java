@@ -18,12 +18,12 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title, anons, fool_text;
+    private String title, anons, full_text;
     private int views;
 
-    public Post(String title, String anons, String fool_text) {
+    public Post(String title, String anons, String ful_text) {
         this.title = title;
         this.anons = anons;
-        this.fool_text = fool_text;
+        this.full_text = full_text;
     }
 }
